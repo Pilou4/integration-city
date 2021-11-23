@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
-        <title>integration</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" defer></script>
+        <script src="./js/main.js" defer></script>
+        <title>integration maquette</title>
     </head>
-    <body>
+    <body class="body">        
         <header class="header">
+            <a href="#" class="header__icon" id="header__icon"></a>
             <nav class="nav">
                 <a href="#propos" class="nav__link">a propos</a>
                 <a href="#view" class="nav__link">a voir</a>
@@ -16,93 +19,95 @@
                 <a href="#more" class="nav__link">en plus</a>
             </nav>
         </header>
-        <main>
-            <section class="propos">
-                <h2 id="propos" class="propos__title"><span>à</span> propos</h2>
-                <p class="propos__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                    consectetur placeat, eius nam consequatur repellat tempore voluptatem
-                    doloribus beatae quod ipsam laboriosam, a officiis illo <span>maxime optio ipsum.</span>
-                    Quidem, atque!
-                </p>
-                <p class="propos__text2">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quos
-                    quia <span>itaque illo</span> quasi hic optio, magni sint corporis qui.
-                </p>
-            </section>
-            <section class="section">
-                <div class="img">
-                    <img src="./img/image1.jpg" alt="champs" class="img1">
-                </div>
-                <div class="text">
-                    <h3>Maecenas</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum ut,
-                        quibusdam laudantium cum dolore corporis nostrum. Libero culpa atque 
-                        tempora quas est, placeat fugiat earum dicta, cumque voluptas nesciunt
-                        quia quasi esse saepe. Molestias non minima laudantium accusamus numquam!
+        <div class="site-pusher">
+            <main>
+                <section class="propos">
+                    <h2 id="propos" class="propos__title"><span>à</span> propos</h2>
+                    <p class="propos__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                        consectetur placeat, eius nam consequatur repellat tempore voluptatem
+                        doloribus beatae quod ipsam laboriosam, a officiis illo <span>maxime optio ipsum.</span>
+                        Quidem, atque!
                     </p>
-                </div>
-            </section>
-            <section class="section">
-                <div class="text">
-                    <h3>Quisque pulvinar</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum ut,
-                        quibusdam laudantium cum dolore corporis nostrum. Libero culpa atque 
-                        tempora quas est, placeat fugiat earum dicta, cumque voluptas nesciunt
-                        quia quasi esse saepe. Molestias non minima laudantium accusamus numquam!
+                    <p class="propos__text2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quos
+                        quia <span>itaque illo</span> quasi hic optio, magni sint corporis qui.
                     </p>
-                </div>
-                <div class="img">
-                    <img src="./img/image2.jpg" alt="fleuve et batiment" class="img2">
-                </div>
-            </section>
-            <section class="view">
-                <h2 id="view" class="view__title"><span>à</span> voir</h2>
-                <p class="view__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                    consectetur placeat, eius nam consequatur repellat tempore voluptatem
-                    doloribus beatae quod ipsam laboriosam, a officiis illo maxime optio ipsum.
-                    <strong>Quidem, atque ipsam !</strong>Lorem ipsum dolor <span>sit amet consectetur adipisicing elit.</span>
-                    Nesciunt consectetur placeat, eius nam consequatur repellat tempore voluptatem
-                </p>
-            </section>
-            <section class="section__img"></section>
-            <section class="eat">
-                <h2 id="eat" class="eat__title"><span>à</span> manger</h2>
-                <p class="eat__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                    consectetur placeat, eius nam consequatur repellat tempore voluptatem
-                    doloribus beatae quod ipsam laboriosam, a officiis illo maxime optio ipsum.
-                    Quidem, atque ipsam !Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nesciunt consectetur placeat, eius nam consequatur repellat tempore voluptatem
-                </p>
-            </section>
-            <section class="flat">
-                <img src="./img/image4.jpg" alt="asssiete" class="flat__img">
-                <img src="./img/image5.jpg" alt="plat de legumes" class="flat__img">
-                <img src="./img/image6.jpg" alt="plat" class="flat__img">
-                <img src="./img/image8.jpg" alt="agrumes" class="flat__img">
-            </section>
-            <section class="section__img2"></section>
-            <section class="more">
-                <h2 id="more" class="more__title">En plus</h2>
-                <p class="more__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                    consectetur placeat, eius nam consequatur repellat tempore voluptatem
-                    doloribus beatae quod ipsam laboriosam.
-                </p>
-            </section>
-            <section class="section__img3">
-                <img src="./img/image9.jpg" alt="pont" class="more__img">
-                <img src="./img/image10.jpg" alt="ville" class="more__img">
-                <img src="./img/image11.jpg" alt="maison" class="more__img">
-                <img src="./img/image12.jpg" alt="imeuble" class="more__img">
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer__text"><a href="#" >Mentions légales.</a> Tous droits réservés</p>
-        </footer>
+                </section>
+                <section class="section">
+                    <div class="img">
+                        <img src="./img/image1.jpg" alt="champs" class="img1">
+                    </div>
+                    <div class="text maecenas">
+                        <h3>Maecenas</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum ut,
+                            quibusdam laudantium cum dolore corporis nostrum. Libero culpa atque
+                            tempora quas est, placeat fugiat earum dicta, cumque voluptas nesciunt
+                            quia quasi esse saepe. Molestias non minima laudantium accusamus numquam!
+                        </p>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="text">
+                        <h3>Quisque pulvinar</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum ut,
+                            quibusdam laudantium cum dolore corporis nostrum. Libero culpa atque
+                            tempora quas est, placeat fugiat earum dicta, cumque voluptas nesciunt
+                            quia quasi esse saepe. Molestias non minima laudantium accusamus numquam!
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="./img/image2.jpg" alt="fleuve et batiment" class="img2">
+                    </div>
+                </section>
+                <section class="view">
+                    <h2 id="view" class="view__title"><span>à</span> voir</h2>
+                    <p class="view__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                        consectetur placeat, eius nam consequatur repellat tempore voluptatem
+                        doloribus beatae quod ipsam laboriosam, a officiis illo maxime optio ipsum.
+                        <strong>Quidem, atque ipsam !</strong>Lorem ipsum dolor <span>sit amet consectetur adipisicing elit.</span>
+                        Nesciunt consectetur placeat, eius nam consequatur repellat tempore voluptatem
+                    </p>
+                </section>
+                <section class="section__img"></section>
+                <section class="eat">
+                    <h2 id="eat" class="eat__title"><span>à</span> manger</h2>
+                    <p class="eat__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                        consectetur placeat, eius nam consequatur repellat tempore voluptatem
+                        doloribus beatae quod ipsam laboriosam, a officiis illo maxime optio ipsum.
+                        Quidem, atque ipsam !Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt consectetur placeat, eius nam consequatur repellat tempore voluptatem
+                    </p>
+                </section>
+                <section class="flat">
+                    <img src="./img/image4.jpg" alt="asssiete" class="flat__img">
+                    <img src="./img/image5.jpg" alt="plat de legumes" class="flat__img">
+                    <img src="./img/image6.jpg" alt="plat" class="flat__img">
+                    <img src="./img/image8.jpg" alt="agrumes" class="flat__img">
+                </section>
+                <section class="section__img2"></section>
+                <section class="more">
+                    <h2 id="more" class="more__title">En plus</h2>
+                    <p class="more__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                        consectetur placeat, eius nam consequatur repellat tempore voluptatem
+                        doloribus beatae quod ipsam laboriosam.
+                    </p>
+                </section>
+                <section class="section__img3">
+                    <img src="./img/image9.jpg" alt="pont" class="more__img">
+                    <img src="./img/image10.jpg" alt="ville" class="more__img">
+                    <img src="./img/image11.jpg" alt="maison" class="more__img">
+                    <img src="./img/image12.jpg" alt="imeuble" class="more__img">
+                </section>
+            </main>
+            <footer class="footer">
+                <p class="footer__text"><a href="#" >Mentions légales.</a></p>
+            </footer>
+        </div>
     </body>
 </html>
